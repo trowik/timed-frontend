@@ -13,7 +13,6 @@ export default Route.extend({
       controller.set("hasAccess", false);
     } else {
       controller.set("hasAccess", true);
-      controller.fetchProjectsOfUser.perform();
     }
   }
 });
