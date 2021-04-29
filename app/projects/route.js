@@ -11,7 +11,6 @@ export default Route.extend({
 
     if (this.user.isSuperuser || this.user.isReviewer) {
       controller.set("hasAccess", true);
-      controller.fetchProjectsOfUser.perform();
     } else {
       controller.set("hasAccess", false);
     }
